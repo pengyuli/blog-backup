@@ -2,6 +2,7 @@
 title: 'Long polling, WebSockets, and Server-Sent Events'
 date: 2020-09-02 23:38:57
 tags: System Design
+categories: SystemDesign
 ---
 
 Building a real-time web application is a bit challenging one, where we need to consider how we are going to send our data from the server to the client. There two general approaches: client pull or server push.

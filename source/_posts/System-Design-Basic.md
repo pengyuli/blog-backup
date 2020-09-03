@@ -2,6 +2,7 @@
 title: System Design Basic
 date: 2020-09-02 23:32:31
 tags: System Design
+categories: SystemDesign
 ---
 
 ### Scalability
