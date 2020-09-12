@@ -4,7 +4,7 @@ date: 2020-09-03 01:10:09
 categories: Networking
 tags: TCP UPD ApplicationLayer
 ---
-![Imgur](/images/OSI.png)
+![OSI](/images/OSI.png)
 
 # Application Layer
 ## Hypertext transfer protocol (HTTP)

@@ -6,8 +6,9 @@ tags: network
 ---
 
 ## 5 Layer Model
-![Imgur](/images/Computer_Networking/5layer.png)
-![Imgur](/images/Computer_Networking/Encapsulation.png)
+![5Layer Model](/images/Computer_Networking/5layer.png)
+![Encapsulation](/images/Computer_Networking/Encapsulation.png)
+![5 Layer overview](/images/Computer_Networking/TCPIP_5_layer_overview.JPG)
 
 #### 4 layer model: 
 doesn’t differentiate between the physical layer and the data link layer
@@ -16,8 +17,11 @@ doesn’t differentiate between the physical layer and the data link layer
 OSI model abstracts the application layer into three layers total.
 
 ### Example of relation betwen layers
-![Imgur](/images/Computer_Networking/5layer_example.png)
+![Example](/images/Computer_Networking/5layer_example.png)
 
+
+
+## Physical Layer
 The physical layer is the delivery truck and the roads.
 The data link layer is how the delivery trucks
 get from one intersection to the next over and over.
@@ -26,9 +30,6 @@ to be taken to get from address A to address B.
 The transport layer ensures that delivery driver knows
 how to knock on your door to tell you your package has arrived.
 And the application layer is the contents of the package itself. 
-
-## Physical Layer
-
 ## Data link Layer	
 the data link layer is responsible for
 defining a common way of interpreting these signals,
@@ -66,10 +67,24 @@ communicate with each other through devices known as routers.
 **delivering datagram to computers -- ip address**
 
 #### Protocol in this layer: IP
-![Imgur](/images/Computer_Networking/IPHeader.png)
+![IP header](/images/Computer_Networking/IPHeader.png)
+
+IP address has two parts. The first part of an IP address is used as a network address, the last part as a host address. 
+
+##### Subnet mask （子网掩码）
+	The subnet mask is used by the TCP/IP protocol to determine whether a host is on the local subnet or on a remote network.
+	
+	In TCP/IP, the parts of the IP address that are used as the network and host addresses are not fixed, so the network and host addresses above cannot be determined unless you have more information. This information is supplied in another 32-bit number called a subnet mask. In this example, the subnet mask is 255.255.255.0. It is not obvious what this number means unless you know that 255 in binary notation equals 11111111; so, the subnet mask is:
+	 
+	   11111111.11111111.11111111.0000000
+	 
+	Lining up the IP address and the subnet mask together, the network and host portions of the address can be separated:
+	 
+	   11000000.10101000.01111011.10000100 -- IP address (192.168.123.132)
+	   11111111.11111111.11111111.00000000 -- Subnet mask (255.255.255.0)
 
 #### Address Resolution Protocal ARP
-ARP is a protocol used to discover the hardware address of a node with a certain
+ARP is a protocol used to discover the hardware address(MAC) of a node with a certain
 IP address. 
 ## Transport Layer
 the transport layer sorts out which client and server programs are supposed to get that data.
