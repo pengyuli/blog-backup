@@ -39,6 +39,7 @@ The load balancer can be a single point of failure; to overcome this, a second l
 
 ### L4 Load Balancer
 Layer 4 load balancing (TCP layer)
+
 L4 as the name suggests works on Layer4 (and Layer3) of the OSI model. When a client makes a request, it creates a TCP connection with the load balancer. The Load Balancer then uses the same TCP connection that the client created with it, to connect with one of the upstream servers.
 
 The source and destination IP of each packet is changed by the load balancer using **NAT** (Network address translation).
